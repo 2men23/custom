@@ -14,7 +14,7 @@
         var bot = window.bot;
 
         // Load custom settings set below
-        bot.retrieveSettings();
+        bot.retrieveSettings(https://github.com/2men23/custom/blob/master/extension.js);
 
         //Extend the bot here, either by calling another function or here directly.
 
@@ -46,72 +46,74 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "animeFan#1",
       language: "english",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+      scriptLink: "https://github.com/2men23/custom/blob/master/extension.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
-      autowoot: true,
-      autoskip: false,
-      smartSkip: true,
-      cmdDeletion: true,
-      maximumAfk: 120,
-      afkRemoval: true,
-      maximumDc: 60,
-      bouncerPlus: true,
-      blacklistEnabled: true,
-      lockdownEnabled: false,
-      lockGuard: false,
-      maximumLocktime: 10,
-      cycleGuard: true,
-      maximumCycletime: 10,
-      voteSkip: false,
-      voteSkipLimit: 10,
-      historySkip: false,
-      timeGuard: true,
-      maximumSongLength: 10,
-      autodisable: false,
-      commandCooldown: 30,
-      usercommandsEnabled: true,
-      skipPosition: 3,
-      skipReasons: [
-      ["theme", "This song does not fit the room theme. "],
-      ["op", "This song is on the OP list. "],
-      ["history", "This song is in the history. "],
-      ["mix", "You played a mix, which is against the rules. "],
-      ["sound", "The song you played had bad sound quality or no sound. "],
-      ["nsfw", "The song you contained was NSFW (image or sound). "],
-      ["unavailable", "The song you played was not available for some users. "]
-      ],
-      afkpositionCheck: 15,
-      afkRankCheck: "ambassador",
-      motdEnabled: false,
-      motdInterval: 5,
-      motd: "Temporary Message of the Day",
-      filterChat: true,
-      etaRestriction: false,
-      welcome: true,
-      opLink: null,
-      rulesLink: null,
-      themeLink: null,
-      fbLink: null,
-      youtubeLink: null,
-      website: null,
-      intervalMessages: [],
-      messageInterval: 5,
-      songstats: true,
-      commandLiteral: "!",
-      blacklists: {
-        NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
-      }
-    }));
+      startupCap: 10, // 1-200
+            startupVolume: 100, // 0-100
+            startupEmoji: true, // true or false
+            autowoot: true,
+            autoskip: false,
+            smartSkip: true,
+            cmdDeletion: true,
+            maximumAfk: 10,
+            afkRemoval: true,
+            maximumDc: 60,
+            bouncerPlus: true,
+            blacklistEnabled: true,
+            lockdownEnabled: false,
+            lockGuard: false,
+            maximumLocktime: 10,
+            cycleGuard: true,
+            maximumCycletime: 10,
+            voteSkip: true,
+            voteSkipLimit: 10,
+            historySkip: true,
+            timeGuard: true,
+            maximumSongLength: 7,
+            autodisable: false,
+            commandCooldown: 30,
+            usercommandsEnabled: true,
+            thorCommand: false,
+            thorCooldown: 10,
+            skipPosition: 3,
+            skipReasons: [
+                ['theme', 'This song does not fit the room theme. '],
+                ['op', 'This song is on the OP list. '],
+                ['history', 'This song is in the history. '],
+                ['mix', 'You played a mix, which is against the rules. '],
+                ['sound', 'The song you played had bad sound quality or no sound. '],
+                ['nsfw', 'The song you contained was NSFW (image or sound). '],
+                ['unavailable', 'The song you played was not available for some users. ']
+            ],
+            afkpositionCheck: 15,
+            afkRankCheck: 'ambassador',
+            motdEnabled: false,
+            motdInterval: 5,
+            motd: 'welcome',
+            filterChat: true,
+            etaRestriction: false,
+            welcome: true,
+            opLink: string,
+            rulesLink: string,
+            themeLink: string,
+            fbLink: string,
+            youtubeLink: null,
+            website: string,
+            intervalMessages: [],
+            messageInterval: 5,
+            songstats: true,
+            commandLiteral: '!',
+            blacklists: {
+                NSFW: 'https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json',
+                OP: 'https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json',
+                BANNED: 'https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json'
+            }
+        },));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("getScript('https://github.com/2men23/custom/blob/master/extension.js", extend);
 
 }).call(this);
