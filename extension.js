@@ -1,10 +1,10 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "2men23";
 
     // Define our function responsible for extending the bot.
-    function extend() {
+    function extend(1) {
         // If the bot hasn't been loaded properly, try again in 1 second(s).
         if (!window.bot) {
           return setTimeout(extend, 1 * 1000);
@@ -14,7 +14,7 @@
         var bot = window.bot;
 
         // Load custom settings set below
-        bot.retrieveSettings();
+        bot.retrieveSettings(https://github.com/2men23/custom/blob/master/extension.js);
 
         //Extend the bot here, either by calling another function or here directly.
 
@@ -39,7 +39,7 @@
         };
 
         // Load the chat package again to account for any changes
-        bot.loadChat();
+        bot.loadChat(en.json);
 
       }
 
@@ -96,13 +96,14 @@
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: string,
-            rulesLink: string,
-            themeLink: string,
-            fbLink: string,
+            opLink: string (),
+            rulesLink: string ('https://animearmy-plug-dj.weebly.com'),
+            themeLink: string ('https://animearmy-plug-dj.weebly.com'),
+            fbLink: string ('https://www.facebook.com/animearmy.plug.dj'),
+            discordLink: string ('https://discord.gg/JYNrCQC'),
             youtubeLink: null,
-            website: string,
-            intervalMessages: [],
+            website: string ('https://animearmy-plug-dj.weebly.com'),
+            intervalMessages: [5],
             messageInterval: 5,
             songstats: true,
             commandLiteral: '!',
