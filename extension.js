@@ -114,6 +114,6 @@
         },));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("getScript('https://github.com/2men23/custom/blob/master/extension.js", extend);
+    $.getScript("https://github.com/2men23/custom/blob/master/extension.js", extend);
 
 }).call(this);
