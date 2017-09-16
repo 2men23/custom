@@ -14,7 +14,7 @@
         var bot = window.bot;
 
         // Load custom settings set below
-        bot.retrieveSettings(https://github.com/2men23/custom/blob/master/extension.js);
+        bot.retrieveSettings();
 
         //Extend the bot here, either by calling another function or here directly.
 
@@ -49,7 +49,7 @@
       botName: "animeFan#1",
       language: "english",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-      scriptLink: "https://github.com/2men23/custom/blob/master/extension.js",
+      scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 10, // 1-200
             startupVolume: 100, // 0-100
