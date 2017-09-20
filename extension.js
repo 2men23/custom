@@ -4,7 +4,7 @@
     var fork = "2men23";
 
     // Define our function responsible for extending the bot.
-    function extend(1) {
+    function extend() {
         // If the bot hasn't been loaded properly, try again in 1 second(s).
         if (!window.bot) {
           return setTimeout(extend, 1 * 1000);
