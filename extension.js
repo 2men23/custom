@@ -118,3 +118,4 @@
     $.getScript('https://rawgit.com/basicBot/source/master/basicBot.js', extend);
 
 }.call(this);
+ }
